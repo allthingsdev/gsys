@@ -1,5 +1,6 @@
 <?php
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
+
 require_once 'init.php';
 
-return ConsoleRunner::createHelperSet($entity_manager);
+return ConsoleRunner::createHelperSet($em);

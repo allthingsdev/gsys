@@ -1,22 +1,22 @@
 <?php
-$root_path = '../';
+use Doctrine\ORM\Tools\Setup;
+use Doctrine\ORM\EntityManager;
 
 require_once (__DIR__.'/../lib/vendor/autoload.php');
 
-// Setup Doctrine
-$configuration = Doctrine\ORM\Tools\Setup::createAnnotationMetadataConfiguration(
+$config = Setup::createAnnotationMetadataConfiguration(
     $paths = [__DIR__.'/../app/entities'],
     $isDevMode = true
 );
 
 // Setup connection parameters
-$connection_parameters = [
-    'dbname' => 'gsys',
-    'user' => 'gsys',
-    'password' => '#gue55P@55#',
-    'host' => 'localhost',
-    'driver' => 'pdo_pgsql'
+$db_params = [
+    'dbname'    => 'gsys',
+    'user'      => 'gsys',
+    'password'  => '#gue55P@55#',
+    'host'      => 'localhost',
+    'driver'    => 'pdo_pgsql'
 ];
 
 // Get the entity manager
-$entity_manager = Doctrine\ORM\EntityManager::create($connection_parameters, $configuration);
+$em = EntityManager::create($db_params, $config);
