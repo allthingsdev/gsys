@@ -4,4 +4,4 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 php composer.phar install -d ../lib/
 php ../lib/vendor/bin/doctrine orm:generate-entities ../app/
-php vendor/bin/doctrine orm:schema-tool:update --force
+php ../lib/vendor/bin/doctrine orm:schema-tool:update --force
