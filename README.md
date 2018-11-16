@@ -1,4 +1,6 @@
 # gsys
+
+id db is postgres the in pg_hba.conf make all auth. md5 (incl. for ipv6)
 # Install Doctrine and other dependencies ..run from root folder**/
 php config/composer.phar install -d lib/
 
