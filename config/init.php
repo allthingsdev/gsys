@@ -3,6 +3,7 @@ use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 
 require_once (__DIR__.'/../lib/vendor/autoload.php');
+require_once ('app-config.php');
 
 $config = Setup::createAnnotationMetadataConfiguration(
     $paths = [__DIR__.'/../app/entities'],

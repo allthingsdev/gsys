@@ -24,13 +24,13 @@ function validate_input($formdata) {
     ->setLastName($lastname)
     ->setUserName($username)
     ->setPassword($password)
-    ->setCreatedOn(date('Y-m-d H:i:s'))
-    ->setUpdatedOn(date('Y-m-d H:i:s'));
+    ->setCreatedOn(new Datetime())
+    ->setUpdatedOn(new Datetime());
     
     $em->persist($user);
     
     // Finally flush and execute the database transaction
     $em->flush();
     
-    header('Location: '.$root_path.'/app/auth/login.php');
+    header('Location: '.HTTP_SERVER.'app/auth/login.php');
 
