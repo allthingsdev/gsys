@@ -6,7 +6,7 @@
 </head>
 <body>
 	
-	<form action="register_validate.php" method="POST">
+	<form action="registration.php" method="POST">
   		First name:<br>
   			<input type="text" name="firstname" value=""><br>
   		Last name:<br>
@@ -21,6 +21,6 @@
   		<input type="submit" value="Submit">
 	</form>
 		<br><br>
-  		<a class="button" href="login_new.php">Login</a>
+  		<a class="button" href="login.php">Login</a>
 </body>
 </html>

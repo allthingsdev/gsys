@@ -21,7 +21,7 @@ class User
      *          unique=false, 
      *          nullable=true)
      */
-    private $first_name;
+    private $firstName;
 
     /**
     * @Column(type="string", 
@@ -30,7 +30,7 @@ class User
      *          unique=false, 
      *          nullable=true)
      */
-    private $last_name;
+    private $lastName;
 
     /**
     * @Column(type="string", 
@@ -39,7 +39,7 @@ class User
      *          unique=true, 
      *          nullable=false)
      */
-    private $user_name;
+    private $userName;
 
     /**
     * @Column(type="string", 
@@ -55,14 +55,14 @@ class User
      *          name="created_on", 
      *          nullable=false)
      */
-    private $created_on;
+    private $createdOn;
 
     /**
     * @Column(type="datetime", 
      *          name="updated_on", 
      *          nullable=true)
      */
-    private $updated_on;
+    private $updatedOn;
 
     /**
      * Get id.
@@ -83,7 +83,7 @@ class User
      */
     public function setFirstName($firstName = null)
     {
-        $this->first_name = $firstName;
+        $this->firstName = $firstName;
 
         return $this;
     }
@@ -95,7 +95,7 @@ class User
      */
     public function getFirstName()
     {
-        return $this->first_name;
+        return $this->firstName;
     }
 
     /**
@@ -107,7 +107,7 @@ class User
      */
     public function setLastName($lastName = null)
     {
-        $this->last_name = $lastName;
+        $this->lastName = $lastName;
 
         return $this;
     }
@@ -119,7 +119,7 @@ class User
      */
     public function getLastName()
     {
-        return $this->last_name;
+        return $this->lastName;
     }
 
     /**
@@ -131,7 +131,7 @@ class User
      */
     public function setUserName($userName)
     {
-        $this->user_name = $userName;
+        $this->userName = $userName;
 
         return $this;
     }
@@ -143,7 +143,7 @@ class User
      */
     public function getUserName()
     {
-        return $this->user_name;
+        return $this->userName;
     }
 
     /**
@@ -179,7 +179,7 @@ class User
      */
     public function setCreatedOn($createdOn)
     {
-        $this->created_on = $createdOn;
+        $this->createdOn = $createdOn;
 
         return $this;
     }
@@ -191,7 +191,7 @@ class User
      */
     public function getCreatedOn()
     {
-        return $this->created_on;
+        return $this->createdOn;
     }
 
     /**
@@ -203,7 +203,7 @@ class User
      */
     public function setUpdatedOn($updatedOn = null)
     {
-        $this->updated_on = $updatedOn;
+        $this->updatedOn = $updatedOn;
 
         return $this;
     }
@@ -215,6 +215,6 @@ class User
      */
     public function getUpdatedOn()
     {
-        return $this->updated_on;
+        return $this->updatedOn;
     }
 }
